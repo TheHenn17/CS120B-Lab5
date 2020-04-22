@@ -43,7 +43,7 @@ void Tick() {
 			break;
 		case Display:
 		case Wait:
-			PORTB = sequence[i];
+			PORTC = sequence[i];
 			break;
 		default:
 			break;
@@ -52,7 +52,7 @@ void Tick() {
 
 int main(void) {
         DDRA = 0x00; PORTA = 0xFF;
-        DDRB = 0xFF; PORTB = 0x00;
+        DDRC = 0xFF; PORTC = 0x00;
 	state = Start;
         while (1) { Tick(); }
         return 1;

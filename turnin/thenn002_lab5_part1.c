@@ -15,7 +15,7 @@
 int main(void) {
     /* Insert DDR and PORT initializations */
         DDRA = 0x00; PORTA = 0xFF;
-        DDRB = 0xFF; PORTB = 0x00;
+        DDRC = 0xFF; PORTC = 0x00;
     /* Insert your solution below */
         unsigned char tempA;
         unsigned char tempC;
@@ -40,7 +40,7 @@ int main(void) {
                 if((tempA >= 13) && (tempA <= 15)) {
                         tempC = 0x3F;
                 }
-                PORTB = tempC;
+                PORTC = tempC;
         }
         return 1;
 }     

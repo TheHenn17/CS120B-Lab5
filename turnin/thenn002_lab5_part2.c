@@ -70,7 +70,7 @@ void Tick() {
                 case Inc:
                 case Dec:
                 case Rst:
-                        PORTB = cnt;
+                        PORTC = cnt;
                         break;
                 default:
                         break;
@@ -80,10 +80,10 @@ void Tick() {
 int main(void) {
     /* Insert DDR and PORT initializations */
         DDRA = 0x00; PORTA = 0xFF;
-        DDRB = 0xFF; PORTB = 0x00;
+        DDRC = 0xFF; PORTC = 0x00;
     /* Insert your solution below */
         state = Start;
-        cnt = 7;
+        cnt = 0;
         while (1) { Tick(); }
         return 1;
 }
