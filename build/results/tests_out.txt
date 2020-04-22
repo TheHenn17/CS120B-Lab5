@@ -1,7 +1,7 @@
-Breakpoint 1 at 0x2d8: file source/main.c, line 87.
+Breakpoint 1 at 0x1a4: file source/main.c, line 57.
 Note: automatically using hardware breakpoints for read-only addresses.
 ======================================================
 Running all tests..."
 
-"PINA: 0x03, 0x02, 0x03; cnt: 9 => PORTC: 9, 9, 9; state: Wait, Inc, Wait"..."PINA: 0x03, 0x01, 0x03; cnt: 0 => PORTC: 0, 0, 0; state: Wait, Dec, Wait"..."PINA: 0x01, 0x00, 0x01; cnt: 5 => PORTC: 5, 0, 0; state: Dec, Rst, Rst"..."PINA: 0x02, 0x00, 0x02; cnt: 5 => PORTC: 5, 0, 0; state: Inc, Rst, Rst"..."PINA: 0x03, 0x00, 0x03; cnt: 5 => PORTC: 5, 0, 0; state: Wait, Rst, Wait"..."PINA: 0x03, 0x02, 0x03, 0x01, 0x03, 0x02, 0x01, 0x02; cnt: 5 => PORTC: 5, 6, 6, 5, 5, 6, 5, 6; state: Wait, Inc, Wait, Dec, Wait, Inc, Dec, Inc"...======================================================
+"PINA: 0x03, 0x02, 0x03, 0x02, 0x03, 0x02, 0x03, 0x02, 0x03 => PORTC: 33, 18, 18, 12, 12, 18, 18, 33, 33; state: Display, Wait, Display, Wait, Display, Wait, Display, Wait, Display"..."PINA: 0x0F, 0x07, 0x0F, 0x0B, 0x0F => PORTC: 33, 33, 33, 33, 33; state: Display"..."PINA: 0x0F, 0x0C, 0x0F, 0x0A, 0x0F, 0x06, 0x0F => PORTC: 33, 18, 18, 12, 12, 18, 18; state: Display, Wait, Diplay, Wait, Display, Wait, Display"...======================================================
 Remote doesn't know how to detach
